@@ -1,0 +1,17 @@
+#!/bin/sh
+
+test1() {
+    echo "It's test1 with $# arguments: \"$@\""
+}
+
+test2() {
+    echo "It's test2 with $# arguments: \"$@\""
+}
+
+ help() {
+    printf "It's from help:\n$(echo "$AF" | sed 's/^/\t--/g')\n"
+    return 0
+}
+
+. ./argv.low.lib.sh
+

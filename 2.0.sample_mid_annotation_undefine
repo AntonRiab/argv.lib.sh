@@ -1,0 +1,12 @@
+#!/bin/sh
+
+test1() {
+    echo "It's test1 with $# arguments: \"$@\""
+}
+
+test2() {
+    echo "It's test2 with $# arguments: \"$@\""
+}
+
+. ./argv.mid.lib.sh
+

@@ -1,0 +1,18 @@
+#!/bin/sh
+
+test1() {
+    echo "It's test1 with $# arguments: \"$@\""
+}
+
+test2() {
+    echo "It's test2 with $# arguments: \"$@\""
+}
+
+other() {
+    echo "It's from other function with $# arguments: \"$@\""
+    return 0
+}
+
+DEFAULT_FUNCTION="other"
+
+. ./argv.low.lib.sh

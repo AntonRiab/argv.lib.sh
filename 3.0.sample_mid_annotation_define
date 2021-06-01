@@ -1,0 +1,19 @@
+#!/bin/sh
+
+firstvar_help="Information about first var"
+firstvar=${firstvar:-"First var"}
+
+othervar_help="Information about second"
+othervar=${othervar:-"Value of other var"}
+
+test1_help="Some help about test1"
+test1() {
+    echo "It's test1 with $# arguments: \"$@\""
+}
+
+test2() {
+    echo "It's test2 with $# arguments: \"$@\""
+}
+
+. ./argv.mid.lib.sh
+

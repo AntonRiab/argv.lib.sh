@@ -1,0 +1,5 @@
+Avalible variables:
+	firstvar="First var"	- Information about first var
+	othervar="Value of other var"	- Information about second
+Avalible functions:
+	--test1	- Some help about test1
