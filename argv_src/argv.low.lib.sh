@@ -8,7 +8,7 @@ test $# -lt 1 && F=$DEFAULT_FUNCTION || F=$@
 test "$(echo $F | grep -i help)" -o ! "$F" \
   && test -z "$(type help | grep funct)" && echo "$AF" | sed 's/^/\t--/' && exit 0
  rf() { F="$1" TR=$(printf "help\n$AF\n" | grep "^$F$")
-    test ! "$TR" && echo "No function $F avalible!" && return
+    test ! "$TR" && echo "No function $F available!" && return
     if [ $# -lt 2 ]; then eval "$TR"; return $?; fi
     shift && eval "$TR $@"
 }
